@@ -2,7 +2,7 @@
     source secret.env
 	TOKEN=
 	CHAT_ID=
-        traf_stat=$(vnstat -i eth0 | grep total | awk '{ print $8  }' | head -n -2)
+        traf_stat=$(vnstat -i eth0 -m | grep "GiB" | awk '{ print $8}' | awk 'NR==3')
         host=$(hostname)
 	MESSAGE=$traf_stat
         MESSAGE1=$host

@@ -15,7 +15,6 @@
 ######################################################################
 
 #!/bin/bash
-
 # Define the two floating-point variables
 threshold_tb=17.5
 threshold_check=$(vnstat -i eth0 -m | grep "GiB" | awk '{ print $8}' | awk 'NR==3')
@@ -35,4 +34,3 @@ while true; do
     # check every 2 minutes
     sleep 120
 done
-

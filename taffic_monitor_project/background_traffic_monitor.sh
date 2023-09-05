@@ -26,6 +26,7 @@ while true; do
     echo "threshold_tb is greater than threshold_check. Shutting down..."
     # send notification to telegram bot
         ./notification.sh
+        ./vnstat_reset.sh
         sudo shutdown -h now
         exit 0
     else

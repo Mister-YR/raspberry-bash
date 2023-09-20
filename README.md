@@ -6,4 +6,4 @@ short description: (for more, check readme in folder)
 2) vnstat_reset.sh - reset traffic stat for vnstat utils in linux
 3) float_compare.sh float value compare
 4) ip_check_traf.sh - check RX & TX stats via 'ip -s'
-  
+5) uuid_generate_replace.sh - replace and generate new strings with - uuid:

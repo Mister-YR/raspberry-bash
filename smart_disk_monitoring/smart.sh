@@ -22,8 +22,6 @@ if grep -q "SMART overall-health self-assessment test result: FAILED" smart_log.
  #!/bin/bash
         TOKEN="TOKEN_FOR_TELEGRAM"
         CHAT_ID="TELEGRAM_CHAT_ID"
-        #traf_stat=$(vnstat -i eth0 | grep total | awk '{ print $8  }' | head -n -2)
-                #traf_stat=$(vnstat -i eth0 -m | grep "GiB" | awk '{ print $8}' | awk 'NR==3')
         smart=$(tail -n 7 smart_log.txt)
         # %0A print from new row
         curl -s -X POST https://api.telegram.org/bot$TOKEN/sendMessage -d chat_id=$CHAT_ID -d text="Some_disks_has_en_ERRORS: %0A $smart" > /dev/null

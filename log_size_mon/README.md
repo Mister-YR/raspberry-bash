@@ -1,0 +1,1 @@
+.sh file check log file size and push notification via telegram

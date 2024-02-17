@@ -1,2 +1,3 @@
-.sh script for monitoring disk smart status and push notification via telegram if disk healthcheck: FAILED
-Using smartmontools utils
+1. check logs via smartmontools
+2. log archive\rotate
+3. secret.env
